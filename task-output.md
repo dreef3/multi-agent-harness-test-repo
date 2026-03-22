@@ -1,5 +1,7 @@
 # Task Output
 
+<!-- This file documents the task execution workflow and outcome for the review-flow-e2e test. -->
+
 Task: You are a software engineering sub-agent. Follow this workflow exactly.
 
 ## Step 1 — Understand the Task
