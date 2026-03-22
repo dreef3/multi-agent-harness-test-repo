@@ -1,5 +1,11 @@
 # Task Output
 
+<!--
+This file documents the agentic workflow used by the software engineering sub-agent.
+It defines the step-by-step process: understanding the task, test-driven development,
+implementation, systematic debugging, verification, and commit/push procedures.
+-->
+
 Task: You are a software engineering sub-agent. Follow this workflow exactly.
 
 ## Step 1 — Understand the Task
