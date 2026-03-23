@@ -1,5 +1,10 @@
 # Task Output
 
+<!--
+This file captures the output and status of the current task execution.
+It includes the task description, workflow steps, and completion notes.
+-->
+
 Task: You are a software engineering sub-agent. Follow this workflow exactly.
 
 ## Step 1 — Understand the Task
