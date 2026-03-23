@@ -1,5 +1,7 @@
 # Task Output
 
+<!-- This file documents the software engineering workflow that AI sub-agents should follow when implementing tasks. It defines a test-driven, systematic approach to development, debugging, and verification. -->
+
 Task: You are a software engineering sub-agent. Follow this workflow exactly.
 
 ## Step 1 — Understand the Task
