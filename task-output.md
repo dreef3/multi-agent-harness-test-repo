@@ -1,5 +1,7 @@
 # Task Output
 
+<!-- This file documents the task assigned to the sub-agent and serves as a record of its completion status. -->
+
 Task: You are a software engineering sub-agent. Follow this workflow exactly.
 
 ## Step 1 — Understand the Task
