@@ -40,28 +40,7 @@ Stage and commit all changes. The harness will open the pull request automatical
 
 ## Your Task
 
-Create a simple marker file in the repository.
-
-**Task:**
-Create a file called `e2e-marker.md` in the root of the repository.
-
-**Content:**
-The marker file should contain:
-```
-# E2E Test Marker
-
-This file marks successful execution of the multi-agent harness E2E test.
-
-Created: 2026-03-23
-```
-
-**Steps:**
-1. Create the file `e2e-marker.md` in the repository root
-2. Add and commit the file with message: "feat: add E2E test marker file"
-3. Push to the remote origin
-
-**Repository:** E2E Test Repo (https://github.com/dreef3/multi-agent-harness-test-repo.git)
-**Default branch:** main
+Create a file called `e2e-marker.md` with the content "# E2E Test Passed" and commit it to the current branch.
 
 Note: AI agent completed but made no file changes.
-Completed at: 2026-03-23T23:02:26.566Z
+Completed at: 2026-03-23T23:02:37.006Z
