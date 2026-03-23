@@ -1,5 +1,7 @@
 # Task Output
 
+<!-- This file captures the task description and workflow provided to the software engineering sub-agent (pi). It serves as an audit log of the assigned task and its completion status. -->
+
 Task: You are a software engineering sub-agent. Follow this workflow exactly.
 
 ## Step 1 — Understand the Task
