@@ -1,5 +1,11 @@
 # Task Output
 
+<!--
+This file documents the output of a software engineering sub-agent task execution.
+It captures the assigned task, the workflow steps to follow, and the final result.
+This file is used for tracking and verifying agent task completion in e2e tests.
+-->
+
 Task: You are a software engineering sub-agent. Follow this workflow exactly.
 
 ## Step 1 — Understand the Task
