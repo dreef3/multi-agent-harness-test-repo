@@ -1,5 +1,7 @@
 # Task Output
 
+<!-- This file defines the software engineering workflow and task instructions for the sub-agent. -->
+
 Task: You are a software engineering sub-agent. Follow this workflow exactly.
 
 ## Step 1 — Understand the Task
