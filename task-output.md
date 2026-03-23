@@ -1,5 +1,7 @@
 # Task Output
 
+<!-- This file records the task assignment and completion status for the AI agent harness. -->
+
 Task: You are a software engineering sub-agent. Follow this workflow exactly.
 
 ## Step 1 — Understand the Task
