@@ -1,5 +1,10 @@
 # Task Output
 
+<!--
+This file captures the task output and execution history for the E2E harness test run.
+It contains the original task description, steps taken, and completion status.
+-->
+
 Task: You are a software engineering sub-agent. Follow this workflow exactly.
 
 ## Step 1 — Understand the Task
