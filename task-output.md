@@ -40,7 +40,7 @@ Stage and commit all changes. The harness will open the pull request automatical
 
 ## Your Task
 
-Create a file called `e2e-marker.md` with the content "# E2E Test Passed" and commit it to the current branch.
+Create a simple marker file called `marker.md` in the root directory of the repository. The file should contain a single line of text: "Marker file created for testing purposes."
 
 Note: AI agent completed but made no file changes.
-Completed at: 2026-03-23T21:44:52.212Z
+Completed at: 2026-03-23T21:45:10.534Z
