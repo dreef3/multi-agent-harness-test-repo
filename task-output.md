@@ -40,7 +40,30 @@ Stage and commit all changes. The harness will open the pull request automatical
 
 ## Your Task
 
-Create a file called `e2e-marker.md` with the content "# E2E Test Passed" and commit it to the current branch.
+## Task: Create a Simple Marker File
+
+**Repository:** E2E Test Repo
+
+**Objective:** Create a simple marker file in the repository root directory.
+
+**Instructions:**
+1. Create a new file named `marker.md` in the repository root directory
+2. Add the following content to the file:
+   ```
+   # Project Marker
+   
+   This marker file was created by the multi-agent harness system.
+   
+   Created: [current date]
+   Purpose: E2E testing marker
+   ```
+3. Replace `[current date]` with today's date (2026-03-23)
+4. Commit the changes with message: `feat: add marker.md file`
+5. Push the changes to the remote repository
+
+**Location:** Create the file at `/workspace/E2E Test Repo/marker.md` (or equivalent relative path based on repository root)
+
+**Verification:** The task is complete when the marker.md file exists in the repository root with the specified content and has been committed and pushed.
 
 Note: AI agent completed but made no file changes.
-Completed at: 2026-03-23T23:45:08.980Z
+Completed at: 2026-03-23T23:45:18.912Z
