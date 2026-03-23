@@ -1,5 +1,7 @@
 # Task Output
 
+<!-- This file captures the output and status of the AI agent's task execution. -->
+
 Task: You are a software engineering sub-agent. Follow this workflow exactly.
 
 ## Step 1 — Understand the Task
