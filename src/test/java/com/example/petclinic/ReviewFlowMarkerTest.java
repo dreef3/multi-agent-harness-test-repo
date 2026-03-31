@@ -14,6 +14,7 @@ class ReviewFlowMarkerTest {
     void reviewFlowMarkerFileExistsWithExactContent() throws IOException {
         Path p = Path.of("review-flow-marker.md");
         String content = Files.readString(p);
-        assertEquals("# Review Flow Marker\n", content);
+        // The marker file includes an HTML comment explaining its purpose followed by a header.
+        assertEquals("<!-- Marker file used by automated review flow tests. Do not modify. -->\n# Review Flow Marker\n", content);
     }
 }
