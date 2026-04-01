@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.petclinic.PetClinicApplicationTests" time="5.825" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.petclinic.OwnerControllerTest" time="1.027" tests="1" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="ANSI_X3.4-1968"/>
@@ -62,9 +62,19 @@
     <property name="java.class.version" value="65.0"/>
     <property name="LOGGED_APPLICATION_NAME" value="[petclinic] "/>
   </properties>
-  <testcase name="contextLoads" classname="com.example.petclinic.PetClinicApplicationTests" time="0.566">
-    <system-out><![CDATA[16:57:15.986 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.petclinic.PetClinicApplicationTests]: PetClinicApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-16:57:16.127 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.petclinic.PetClinicApplication for test class com.example.petclinic.PetClinicApplicationTests
+  <testcase name="testSearchOwnersByLastName" classname="com.example.petclinic.OwnerControllerTest" time="0.155">
+    <failure message="Status expected:&lt;200&gt; but was:&lt;400&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<200> but was:<400>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$9(StatusResultMatchers.java:637)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at com.example.petclinic.OwnerControllerTest.testSearchOwnersByLastName(OwnerControllerTest.java:38)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+    <system-out><![CDATA[2026-04-01T16:57:21.551Z  INFO 128 --- [petclinic] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.petclinic.OwnerControllerTest]: OwnerControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-04-01T16:57:21.578Z  INFO 128 --- [petclinic] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.petclinic.PetClinicApplication for test class com.example.petclinic.OwnerControllerTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -74,28 +84,50 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.0)
 
-2026-04-01T16:57:16.721Z  INFO 128 --- [petclinic] [           main] c.e.petclinic.PetClinicApplicationTests  : Starting PetClinicApplicationTests using Java 21.0.10 with PID 128 (started by bun in /workspace/repo-abb35309)
-2026-04-01T16:57:16.723Z  INFO 128 --- [petclinic] [           main] c.e.petclinic.PetClinicApplicationTests  : No active profile set, falling back to 1 default profile: "default"
-2026-04-01T16:57:18.012Z  INFO 128 --- [petclinic] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-04-01T16:57:18.067Z  INFO 128 --- [petclinic] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interface.
-2026-04-01T16:57:18.664Z  INFO 128 --- [petclinic] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-04-01T16:57:18.902Z  INFO 128 --- [petclinic] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2026-04-01T16:57:18.905Z  INFO 128 --- [petclinic] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-04-01T16:57:19.004Z  INFO 128 --- [petclinic] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-04-01T16:57:19.059Z  INFO 128 --- [petclinic] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
-2026-04-01T16:57:19.105Z  INFO 128 --- [petclinic] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-04-01T16:57:19.356Z  INFO 128 --- [petclinic] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-04-01T16:57:19.398Z  WARN 128 --- [petclinic] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-04-01T16:57:20.074Z  INFO 128 --- [petclinic] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-04-01T16:57:20.118Z  INFO 128 --- [petclinic] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-04-01T16:57:20.578Z  WARN 128 --- [petclinic] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-04-01T16:57:20.903Z  INFO 128 --- [petclinic] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-2026-04-01T16:57:20.955Z  INFO 128 --- [petclinic] [           main] c.e.petclinic.PetClinicApplicationTests  : Started PetClinicApplicationTests in 4.634 seconds (process running for 6.212)
+2026-04-01T16:57:21.655Z  INFO 128 --- [petclinic] [           main] c.example.petclinic.OwnerControllerTest  : Starting OwnerControllerTest using Java 21.0.10 with PID 128 (started by bun in /workspace/repo-abb35309)
+2026-04-01T16:57:21.655Z  INFO 128 --- [petclinic] [           main] c.example.petclinic.OwnerControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2026-04-01T16:57:22.379Z  INFO 128 --- [petclinic] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-04-01T16:57:22.380Z  INFO 128 --- [petclinic] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-04-01T16:57:22.382Z  INFO 128 --- [petclinic] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-04-01T16:57:22.403Z  INFO 128 --- [petclinic] [           main] c.example.petclinic.OwnerControllerTest  : Started OwnerControllerTest in 0.819 seconds (process running for 7.66)
+2026-04-01T16:57:22.545Z  WARN 128 --- [petclinic] [           main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "search"]
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /owners/search
+       Parameters = {lastName=[Doe]}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.example.petclinic.OwnerController
+           Method = com.example.petclinic.OwnerController#getOwnerById(Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = org.springframework.web.method.annotation.MethodArgumentTypeMismatchException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 400
+    Error message = null
+          Headers = []
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
 ]]></system-out>
-    <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/home/bun/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.10/byte-buddy-agent-1.14.10.jar)
-WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
-WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
-WARNING: Dynamic loading of agents will be disallowed by default in a future release
-]]></system-err>
   </testcase>
 </testsuite>
