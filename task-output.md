@@ -1,3 +1,5 @@
+<!-- This file records task outputs produced by the automated E2E agent. It is updated by the harness when tasks complete. -->
+
 # Task Output
 
 Task: Address the following code review comments on the pull request branch "feature/review-flow-e2e-1774123161355-e2e-task":
