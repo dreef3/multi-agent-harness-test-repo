@@ -1,3 +1,4 @@
+/** Owner model: represents a pet owner with contact information used by the PetClinic application. */
 package com.example.petclinic;
 
 import jakarta.persistence.Entity;
