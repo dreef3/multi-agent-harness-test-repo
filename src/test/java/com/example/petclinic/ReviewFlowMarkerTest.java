@@ -12,6 +12,6 @@ public class ReviewFlowMarkerTest {
         Path p = Path.of("review-flow-marker.md");
         assertTrue(Files.exists(p), "review-flow-marker.md should exist in repository root");
         String content = Files.readString(p).trim();
-        assertEquals("# Review Flow Marker", content, "review-flow-marker.md should contain the expected marker");
+        assertEquals("# Review Flow Marker\n<!-- E2E test marker -->", content, "review-flow-marker.md should contain the expected marker");
     }
 }
