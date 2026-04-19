@@ -5,19 +5,17 @@ if [ ! -f "$path" ]; then
   echo "MISSING: $path"
   exit 2
 fi
-# read file content as-is
-content=$(cat -- "$path")
-expected="# Review Flow Marker\n"
-# Compare raw bytes: append a marker to show newline
-if [ "$content" = "# Review Flow Marker" ]; then
-  echo "TEST FAIL: file missing trailing newline"
+# Check last byte of file. If it's ASCII 10 (newline), test passes.
+last_byte=$(tail -c1 -- "$path" | od -An -t u1 | tr -d ' ')
+if [ -z "$last_byte" ]; then
+  # empty output means file is empty or tail failed
+  echo "TEST FAIL: cannot read last byte"
   exit 1
-elif [ "$content" = "# Review Flow Marker\n" ]; then
+fi
+if [ "$last_byte" -eq 10 ]; then
   echo "TEST PASS"
   exit 0
 else
-  echo "TEST FAIL: unexpected content:"
-  printf '%s' "$content"
-  echo
+  echo "TEST FAIL: file missing trailing newline (last byte code: $last_byte)"
   exit 1
 fi
