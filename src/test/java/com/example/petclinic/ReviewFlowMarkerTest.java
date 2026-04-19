@@ -13,6 +13,6 @@ class ReviewFlowMarkerTest {
         Path p = Path.of("review-flow-marker.md");
         String content = Files.readString(p);
         // Expect a trailing newline; this will fail if the file doesn't end with '\n'
-        assertEquals("# Review Flow Marker\n", content);
+        assertEquals("# Review Flow Marker\n<!-- E2E test marker -->\n", content);
     }
 }
