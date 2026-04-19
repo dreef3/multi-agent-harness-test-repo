@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-EXPECTED="# Review Flow Marker"
+EXPECTED="# Review Flow Marker
+<!-- E2E test marker -->"
 FILE="review-flow-marker.md"
 
 if [ ! -f "$FILE" ]; then
