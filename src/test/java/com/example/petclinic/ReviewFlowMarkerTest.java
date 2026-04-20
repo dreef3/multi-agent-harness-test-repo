@@ -13,6 +13,6 @@ class ReviewFlowMarkerTest {
     void reviewFlowMarkerFileHasExpectedContent() throws Exception {
         Path p = Path.of("review-flow-marker.md");
         String content = Files.readString(p);
-        assertEquals("# Review Flow Marker\n", content);
+        assertEquals("# Review Flow Marker\n\n<!-- E2E test marker -->\n", content);
     }
 }
