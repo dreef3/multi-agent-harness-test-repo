@@ -13,6 +13,6 @@ public class ReviewFlowMarkerTest {
     public void reviewFlowMarkerFileExistsAndHasCorrectContent() throws Exception {
         Path path = Path.of("review-flow-marker.md");
         String content = Files.readString(path).trim();
-        assertEquals("# Review Flow Marker", content);
+        assertEquals("# Review Flow Marker\n<!-- E2E test marker -->", content);
     }
 }
